@@ -1,20 +1,35 @@
 .tile {
+    position: relative;
     display: flex;
     height: 467px;
-    max-width: 620px;
-    padding: 366px 77px 20px 25px;
+    padding: 20px 77px 20px 25px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 9px;
     border-radius: 10px;
-    background: url(image) lightgray 50% / cover no-repeat;
+    overflow: hidden;
+    background-color: lightgray;
 }
+
+.background {
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.content,
+.description {
+    position: relative;
+    z-index: 1;
+}
+
 .content {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .description {
     color: rgba(243, 227, 196, 0.80);
     font-family: "Nunito Sans";
