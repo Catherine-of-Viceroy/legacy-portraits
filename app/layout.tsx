@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Belanosima, Nunito_Sans } from "next/font/google";
 import "./globals.css";
+
+const belanosima = Belanosima({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-belanosima",
+  display: "swap",
+});
+
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  variable: "--font-nunito-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${belanosima.variable} ${nunitoSans.variable}`}>
       <body>{children}</body>
     </html>
   );

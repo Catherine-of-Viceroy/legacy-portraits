@@ -1,7 +1,11 @@
+import Copy from "./components/Copy";
+import Hero from "./components/Hero";
+
 export default function Home() {
   return (
     <main>
-      <div>Hello world!</div>
+      <Hero />
+      <Copy />
     </main>
   );
 }
