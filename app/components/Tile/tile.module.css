@@ -39,3 +39,12 @@
     line-height: 24px; /* 120% */
     letter-spacing: -0.2px;
 }
+.title {
+    color: #F1EBE3;
+    font-family: Belanosima;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 109.091% */
+    letter-spacing: -0.88px;
+}

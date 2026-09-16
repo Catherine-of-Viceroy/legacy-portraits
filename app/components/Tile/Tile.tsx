@@ -17,6 +17,7 @@ export default function Tile({ title, image, description }: TileProps) {
         fill
         sizes="(max-width: 620px) 100vw, 620px"
         className={styles.background}
+        unoptimized={image.endsWith(".svg")}
       />
       <div className={styles.content}>
         <h2 className={styles.title}>{title}</h2>
