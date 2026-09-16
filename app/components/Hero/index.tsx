@@ -13,6 +13,7 @@ export default function Hero() {
         placeholder="blur"
         sizes="100vw"
         className={styles.background}
+        style={{ objectFit: "cover", objectPosition: "58% 50%" }}
       />
       <div className={styles.content}>
         <span className={styles.tagline}>Design</span>

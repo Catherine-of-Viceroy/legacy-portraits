@@ -26,7 +26,7 @@ export default function Tile({
           src={image}
           alt=""
           fill
-          sizes="(max-width: 620px) 100vw, 620px"
+          sizes="(max-width: 767px) 100vw, 50vw"
           className={styles.background}
           unoptimized={image.endsWith(".svg")}
         />
