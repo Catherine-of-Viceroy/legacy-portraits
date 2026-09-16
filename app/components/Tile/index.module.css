@@ -1,0 +1,26 @@
+.tile {
+    display: flex;
+    height: 467px;
+    max-width: 620px;
+    padding: 366px 77px 20px 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 9px;
+    border-radius: 10px;
+    background: url(image) lightgray 50% / cover no-repeat;
+}
+.content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.description {
+    color: rgba(243, 227, 196, 0.80);
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.2px;
+}

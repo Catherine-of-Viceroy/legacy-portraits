@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "image": "/images/cov.jpg",
+            "url": "//catherineofviceroy.com",
+            "title": "Catherine of Viceroy",
+            "description": "Styling the modern centenarian woman",
+            "isPlaceholder": false
+        },
+        {
+            "id": 2,
+            "image": "/images/placeholder.svg",
+            "title": "Project 2",
+            "description": "Coming Soon",
+            "isPlaceholder": true
+        },
+        {
+            "id": 3,
+            "image": "/images/placeholder.svg",
+            "title": "Project 3",
+            "description": "Coming Soon",
+            "isPlaceholder": true
+        },
+        {
+            "id": 4,
+            "image": "/images/placeholder.svg",
+            "title": "Project 4",
+            "description": "Coming Soon",
+            "isPlaceholder": true
+        }
+    ]
+}
