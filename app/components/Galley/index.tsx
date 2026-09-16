@@ -13,6 +13,8 @@ const Gallery = () => {
                         title={item.title}
                         image={item.image}
                         description={item.description}
+                        url={item.url}
+                        isPlaceholder={item.isPlaceholder}
                     />
                 ))}
             </div>

@@ -11,23 +11,22 @@
         {
             "id": 2,
             "image": "/images/placeholder.svg",
-            "title": "Gallery 2",
-            "description": "Description 2",
+            "title": "Project 2",
+            "description": "Coming Soon",
             "isPlaceholder": true
         },
         {
             "id": 3,
             "image": "/images/placeholder.svg",
-            "url": "/images/placeholder.svg",
-            "title": "Gallery 3",
-            "description": "Description 3",
+            "title": "Project 3",
+            "description": "Coming Soon",
             "isPlaceholder": true
         },
         {
             "id": 4,
             "image": "/images/placeholder.svg",
-            "title": "Gallery 4",
-            "description": "Description 4",
+            "title": "Project 4",
+            "description": "Coming Soon",
             "isPlaceholder": true
         }
     ]
