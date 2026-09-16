@@ -14,7 +14,13 @@ export default function Hero() {
         sizes="100vw"
         className={styles.background}
       />
-      <h1 className={styles.title}>Hero</h1>
+      <div className={styles.content}>
+        <span className={styles.tagline}>Design</span>
+        <span className={styles.dot} aria-hidden="true" />
+        <span className={styles.tagline}>Innovation</span>
+        <span className={styles.dot} aria-hidden="true" />
+        <span className={styles.tagline}>Empathy</span>
+      </div>
     </section>
   );
 }

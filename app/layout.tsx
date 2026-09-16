@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Belanosima, Nunito_Sans } from "next/font/google";
+import { Belanosima, DM_Sans, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
 const belanosima = Belanosima({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-belanosima",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300"],
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -22,7 +29,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${belanosima.variable} ${nunitoSans.variable}`}>
+    <html
+      lang="en"
+      className={`${belanosima.variable} ${dmSans.variable} ${nunitoSans.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
