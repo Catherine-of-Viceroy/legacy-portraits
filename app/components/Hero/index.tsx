@@ -13,8 +13,15 @@ export default function Hero() {
         placeholder="blur"
         sizes="100vw"
         className={styles.background}
+        style={{ objectFit: "cover", objectPosition: "58% 50%" }}
       />
-      <h1 className={styles.title}>Hero</h1>
+      <div className={styles.content}>
+        <span className={styles.tagline}>Design</span>
+        <span className={styles.dot} aria-hidden="true" />
+        <span className={styles.tagline}>Innovation</span>
+        <span className={styles.dot} aria-hidden="true" />
+        <span className={styles.tagline}>Empathy</span>
+      </div>
     </section>
   );
 }

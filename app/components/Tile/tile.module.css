@@ -1,12 +1,17 @@
 .tile {
     position: relative;
     display: flex;
-    height: 467px;
-    padding: 20px 77px 20px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 620 / 467;
+    padding: 4% 5%;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 9px;
+    gap: 2%;
     border-radius: 10px;
     overflow: hidden;
     background-color: lightgray;
@@ -18,24 +23,25 @@ a.tile {
     cursor: pointer;
 }
 
+.placeholder {
+    background-color: #0F2149;
+}
+
 .background {
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     z-index: 0;
 }
 
 .comingSoon {
-    display: flex;
-    align-items: flex-end;
-    height: 48px; /* match .title height */
     margin: 0;
     color: #6C4BF4;
-    font-family: "Nunito Sans";
-    font-size: 18px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
 }
 
@@ -50,26 +56,55 @@ a.tile {
 .content {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .description {
     color: rgba(243, 227, 196, 0.80);
-    font-family: "Nunito Sans";
-    font-size: 20px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 120% */
+    line-height: 22px;
     letter-spacing: -0.2px;
 }
 
 .title {
     margin: 0;
     color: #F1EBE3;
-    font-family: Belanosima;
-    font-size: 44px;
+    font-family: var(--font-belanosima), Belanosima, sans-serif;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 48px; /* 109.091% */
-    letter-spacing: -0.88px;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+}
+
+@media (min-width: 768px) {
+    .tile {
+        height: 467px;
+        aspect-ratio: auto;
+        padding: 20px 77px 20px 25px;
+        gap: 9px;
+    }
+
+    .comingSoon {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+
+    .content {
+        gap: 15px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .title {
+        font-size: 44px;
+        line-height: 48px;
+        letter-spacing: -0.88px;
+    }
 }
