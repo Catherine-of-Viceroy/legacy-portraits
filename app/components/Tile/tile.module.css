@@ -18,6 +18,10 @@ a.tile {
     cursor: pointer;
 }
 
+.placeholder {
+    background-color: #0F2149;
+}
+
 .background {
     object-fit: cover;
     object-position: center;
@@ -25,12 +29,9 @@ a.tile {
 }
 
 .comingSoon {
-    display: flex;
-    align-items: flex-end;
-    height: 48px; /* match .title height */
     margin: 0;
     color: #6C4BF4;
-    font-family: "Nunito Sans";
+    font-family: var(--font-nunito-sans), sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;

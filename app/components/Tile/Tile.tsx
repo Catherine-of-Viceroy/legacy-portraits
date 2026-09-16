@@ -18,16 +18,19 @@ export default function Tile({
   isPlaceholder = true,
 }: TileProps) {
   const isClickable = !isPlaceholder && Boolean(url);
+  const className = `${styles.tile}${isPlaceholder ? ` ${styles.placeholder}` : ""}`;
   const content = (
     <>
-      <Image
-        src={image}
-        alt=""
-        fill
-        sizes="(max-width: 620px) 100vw, 620px"
-        className={styles.background}
-        unoptimized={image.endsWith(".svg")}
-      />
+      {!isPlaceholder ? (
+        <Image
+          src={image}
+          alt=""
+          fill
+          sizes="(max-width: 620px) 100vw, 620px"
+          className={styles.background}
+          unoptimized={image.endsWith(".svg")}
+        />
+      ) : null}
       {isPlaceholder ? (
         <>
           <p className={styles.comingSoon}>Coming Soon</p>
@@ -50,7 +53,7 @@ export default function Tile({
   if (isClickable) {
     return (
       <a
-        className={styles.tile}
+        className={className}
         href={url}
         target="_blank"
         rel="noopener noreferrer"
@@ -60,5 +63,5 @@ export default function Tile({
     );
   }
 
-  return <div className={styles.tile}>{content}</div>;
+  return <div className={className}>{content}</div>;
 }
